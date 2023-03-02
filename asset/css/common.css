@@ -1,0 +1,75 @@
+body {
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+
+.thumb-box {
+    display: block;
+    position: relative;
+}
+
+.thumb-box::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #202020;
+    opacity: 0.1;
+}
+
+
+/* 공용 화장실, 무료 급식소 */
+.header .logo-area a::before,
+.header .search-area .btn-submit::before,
+.header .service-area a::after,
+.sc-news .group-issue .link-media::after,
+.sc-news .set-area a::after,
+.sc-sidenews .nav-wrap .btn-nav::after,
+.sc-news .link-title::before,
+.sc-news .link-title::after,
+.theme-area .infor-area .theme-set::before,
+.theme-area .theme-category .icon-btn,
+.theme-wrap .icon-play,
+.recipe-group .group-title .title::after,
+.recipe-group .media-area .icon-btn,
+.theme-area .more-area .more,
+.footer .notice-group .all-link::after {
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 457px auto;
+}
+
+.shop-group .shop-flex .link::before,
+.shop-group .shop-flex .link::after,
+.shop-control .btn-wrap .btn.prev::before,
+.shop-control .btn-wrap .btn.next::before,
+.shop-products .shop-page .btn.prev::before,
+.shop-products .shop-page .btn.next::before,
+.shop-news .btn.prev::before,
+.shop-news .btn.next::before,
+.shop-plus .btn-wrap .btn.prev::before,
+.shop-plus .btn-wrap .btn.next::before,
+.shop-content .deal-title .deal-logo::before,
+.deal-title .btn-wrap .btn.prev::before,
+.deal-title .btn-wrap .btn.next::before,
+.deal-wrap .img-box .icon-plus,
+.shop-deal .deal-img .icon-plus,
+.shop-deal .deal-wrap .img-box+.img-box::before {
+    background-image: url(../images/shop-bg.png);
+    background-repeat: no-repeat;
+    background-size: 107px auto;
+}
